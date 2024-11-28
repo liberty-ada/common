@@ -1,0 +1,36 @@
+{
+    "name": "liberty-ada/common",
+    "description": "Liberty Common Library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.3",
+        "ext-simplexml": "*",
+        "liberty-ada/system": "^0.2"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "overtrue/phplint": "^9.5",
+        "phpunit/phpunit": "^11.4",
+        "squizlabs/php_codesniffer": "^3.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liberty\\Common\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Liberty\\Common\\Test\\": "tests"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.3.13"
+        },
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
